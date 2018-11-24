@@ -27,7 +27,7 @@
                 $scope.msgClass="warn";
                  $scope.txtBxBorder = "txtBxBorderRed";
             }
-            else if ($scope.count < 3) {
+            else if ($scope.count <= 3) {
               $scope.message = "Enjoy";
              $scope.msgClass = "success";
              $scope.txtBxBorder = "txtBxBorderGreen";
