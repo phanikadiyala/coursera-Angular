@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+Name: <input ng-model="name">
+<button class="btn btn-default" ng-click="abc(name)">Check If Too Much</button>
+<h1>You entered: {{name}}</h1>
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.name = "";
+    $scope.abc = function(value){
+      console.log(value);
+    }
+
+});
+</script>
+
+<p>Change the name inside the input field, and you will see the name in the header changes accordingly.</p>
+
+</body>
+</html>
