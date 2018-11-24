@@ -12,16 +12,10 @@
         $scope.msgClass = "";
         $scope.txtBxBorder = "";
         $scope.count="";
-
-      //  $scope.i="";
-        $scope.stack = function() {
+        $scope.check = function() {
           $scope.count=0;
-            // already can access $scope.input
-            // dont need to pass to stack()
-            var array = $scope.input.split(',');
 
-            // set $scope.message
-            // instead of returning String
+            var array = $scope.input.split(',');
             for(var i=0; i<array.length; i++){
               if(array[i] !=''){
                 $scope.count=$scope.count+1
