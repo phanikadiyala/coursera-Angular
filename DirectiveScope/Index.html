@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="directiveApp">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="app.js"></script>
+<body>
+
+<div ng-controller="CustomerController">
+<!--<div my-customer></div>-->
+<div><my-customer info="naomi"></my-customer></div>
+<div my-customer info="igor"></div>
+
+
+
+<!--
+<div ng-controller="IgorController">
+<div my-customer></div>
+<my-customer></my-customer>
+</div>
+-->
+<div>
+
+      <p>@ or @attr – bind a local scope property to the value of DOM attribute. </p>
+      <p>= or =attr – set up bi-directional binding between a local scope property and the parent scope property of name defined via the value of the attr attribute.</p>
+    <p>  & or &attr – provides a way to execute an expression in the context of the parent scope.</p>
+
+</div>
+
+</body>
+</html>
